@@ -47,6 +47,7 @@ References
 from collections import OrderedDict
 import tarfile
 from io import BytesIO
+from os import makedirs
 from os.path import join, isfile
 try:
     from urllib2 import urlopen
@@ -57,7 +58,6 @@ import numpy as np
 
 from sklearn.datasets import get_data_home
 from sklearn.datasets.base import Bunch
-from sklearn.utils.fixes import makedirs
 from sklearn.externals import six
 from sklearn.utils import check_random_state
 
